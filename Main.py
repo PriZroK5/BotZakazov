@@ -33,7 +33,7 @@ class ProductRepository:
         self._ensure_products_file()
     
     def _ensure_products_file(self):
-        if not os.path.exists(self.filename):
+        if not os.path.exists(self.filename): #можете изменить список товаров и их цены по макету: "(Название товара)|(цена товара)|(Описание товара)"
             default_products = [
                 "Пластик PLA|150.00|Качественный PLA пластик для 3D печати",
                 "Пластик ABS|180.00|Прочный ABS пластик",
@@ -583,7 +583,7 @@ async def error_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
 
 def main():
-    token = "8407196376:AAH2rNvjqkbBb-ndbo8BmUlHlx6nLdseL48"
+    token = "8407196376:AAH2rNvjqkbBb-ndbo8BmUlHlx6nLdseL48" #этот токен можете изменить при необходимости
     
     if not token:
         logger.error("❌ ТОКЕН БОТА НЕ НАСТРОЕН!")
