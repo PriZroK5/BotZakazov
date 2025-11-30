@@ -1,5 +1,9 @@
 # BotZakazov
-# 0.перед запуском бота установите библиотеки коммандами: 
+# 0.перед запуском бота обновите район и пакеты, далее установите библиотеки коммандами: 
+# ```apt update && apt upgrade```(линукс) 
+# ```apt install python```
+# ```apt install python3```
+# Для виндовс, достаточно установить python вручную. И ввести (если установлен) ```python -m pip install --upgrade pip```
 # ```pip install openpyxl==3.1.2```
 # ```pip install python-telegram-bot==20.7```
 # 1.Создатель бота: https://t.me/AyuGramXacker
